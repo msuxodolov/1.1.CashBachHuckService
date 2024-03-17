@@ -36,7 +36,16 @@ public class CashBackHuckServiceTest {
     }
 
     @Test
-    public void remainNegativeTest() {
+    public void remainNegativeOneTest() {
+        CashbackHackService cashbackHackService = new CashbackHackService();
+
+        int expected = 0;
+        int actual = cashbackHackService.remain(1000);
+        Assert.assertEquals(actual, expected);
+    }
+
+    @Test
+    public void remainNegativeTwoTest() {
         CashbackHackService cashbackHackService = new CashbackHackService();
 
         int expected = 1000;
