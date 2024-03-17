@@ -43,5 +43,6 @@ class CashbackHackServiceTest {
         int actual = cashbackHackService.remain(0);
         assertEquals(expected, actual);
     }
+    
 
 }
